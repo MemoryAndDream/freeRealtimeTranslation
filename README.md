@@ -11,10 +11,10 @@ Can be used to generate subtitles during telephone conference calls (such as ZOO
 Default convert from English to Chinese,but you can change it to your language  
 
 支持其他语音的办法：  
-在 https://alphacephei.com/kaldi/models/ 下载语言包，然后替换原来的model文件，或者新建一个model文件夹，比如model-cn，将main.py中的model改为新的文件夹路径。  
+在 https://alphacephei.com/vosk/models 下载语言包，然后替换原来的model文件，或者新建一个model文件夹，比如model-cn，将main.py中的model改为新的文件夹路径。  
 另外需要修改开头的settings中的API域名和语言代码。  
 Ways to support other languages:  
-Download the language pack at https://alphacephei.com/kaldi/models/, then replace the original model file, or create a new model folder, such as model-cn, and change the model in main.py to the new folder path.  
+Download the language pack at https://alphacephei.com/vosk/models, then replace the original model file, or create a new model folder, such as model-cn, and change the model in main.py to the new folder path.  
 And you also need to modify settings in the main.py.
 
 
