@@ -21,7 +21,7 @@ start_time = time.time()  # 子进程这个starttime会重算
 from_lang = 'en'
 to_lang = 'zh-cn'
 google_trans_API = 'translate.googleapis.cn'  # can be translate.googleapis.com
-record_duration = 4 * 20  # record 80s for a single time
+record_duration = 4 * 60  # record 4min for a single time
 
 ##
 SetLogLevel(-1)
@@ -101,6 +101,7 @@ def main():
         p = multiprocessing.Process(target=record_thread, args=())  # target不能带括号！
         p.start()
         time.sleep(RECORD_SEG_TIME)
+    print('recording finished')
 
 
 if __name__ == '__main__':
