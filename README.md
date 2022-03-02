@@ -35,4 +35,7 @@ Need to install blackhole virtual sound card for recording.
 search for midi settings,a dd a multi-output device, choose the blackhole and your headphones or speakers. This way the sound will be both heard by you and converted into an output by blackhole. After adding, you need to right-click to set this device as an output device.
 
 
+作者邮箱：
+author email:
 
+meng93914@gmail.com
