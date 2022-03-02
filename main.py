@@ -34,8 +34,8 @@ def record_wav(wav_path, senconds):
 
     # Channels
     MONO = 1  # 必须是mono
-    print('you may need to modify code fi your speaker device is not the first one')
-    print(sd.query_devices())  # 打印设备列表
+    # print('you may need to modify code fi your speaker device is not the first one')
+    # print(sd.query_devices())  # 打印设备列表
     # Command to get all devices listed: py -m sounddevice
     # Device you want to record
     sd.default.device[0] = 0  # my first device is BlackHole，so set 0 here
