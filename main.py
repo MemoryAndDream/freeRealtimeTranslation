@@ -34,11 +34,10 @@ def record_wav(wav_path, senconds):
 
     # Channels
     MONO = 1  # 必须是mono
-    # print('you may need to modify code fi your speaker device')
-    # print(sd.query_devices())  # 打印设备列表
-    # Command to get all devices listed: py -m sounddevice
+
+
     # Device you want to record
-    sd.default.device[0] = 0  # select your speaker device,  an input device(blakchole in mac, Stereo Mix on windows)
+    sd.default.device[0] = 0  # set this index as your speaker device!!!  An input device(blakchole in mac, Stereo Mix on windows)
     sd.default.samplerate = SAMPLE_RATE
 
     recording = sd.rec(int(SECONDS * SAMPLE_RATE), samplerate=SAMPLE_RATE, channels=MONO, dtype=np.int16)
@@ -103,7 +102,11 @@ def main():
         time.sleep(RECORD_SEG_TIME)
     print('recording finished')
 
+def print_devices():
+    print('you may need to modify code of your speaker device in record_wav() function')
+    print(sd.query_devices())  # 打印设备列表
+    # Command to get all devices listed: py -m sounddevice
 
 if __name__ == '__main__':
+    print_devices()
     main()
-    # record_thread()
