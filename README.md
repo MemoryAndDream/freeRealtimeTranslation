@@ -21,6 +21,7 @@ And you also need to modify settings in the main.py.
 
 
 
+
 ### 安装 (install)
 
 #### pip安装依赖（pip install dependency）：  
@@ -40,7 +41,16 @@ install on mac
 Need to install blackhole virtual sound card for recording.  
 search for midi settings,add a multi-output device, choose the blackhole and your headphones or speakers. This way the sound will be both heard by you and converted into an output by blackhole. After adding, you need to right-click to set this device as an output device.
 
-have not test on windows yet.
+
+WINDOWS:
+Go into the "Sound" control panel applet, (e.g. Start -> Run -> mmsys.cpl)
+select the "Recording" tab,
+Then right-click on and enable the "Stereo mix" device.
+(If "Stereo Mix" isn't being shown, then right-click in the white space or on one of the listed devices and ensure that "show disabled devices" is enabled)
+WINDOWS使用:
+开始-运行-mmsys.cpl
+录制-右键立体混音-启用 然后在脚本里选择立体混音对应的设备编号
+
 
 ### 运行(run)
 运行main.py
