@@ -49,8 +49,6 @@ def record_wav(wav_path, senconds):
 def translate(eng_text):
     from googletrans import Translator
     translator = Translator(service_urls=[google_trans_API])
-    a = translator.translate('我', src='zh-cn', dest='en')
-    print(a)
     text = translator.translate(eng_text, to_lang, from_lang).text
     return text
 
@@ -110,8 +108,7 @@ def print_devices():
     # Command to get all devices listed: py -m sounddevice
 
 if __name__ == '__main__':
-    # print_devices()
-    # main()
-    a = translate('my name')
-    print(a)
+    print_devices()
+    main()
+
 

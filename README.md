@@ -30,6 +30,7 @@ And you also need to modify settings in the main.py.
 引用：
 https://blog.csdn.net/qq_40902326/article/details/127545967
 
+但是估计还是稳定不了多久，可以自己改成其他翻译服务，比如百度翻译，自己用也不用钱
 
 
 ### 安装 (install)
