@@ -18,7 +18,17 @@ Ways to support other languages:
 Download the language pack at https://alphacephei.com/vosk/models, then replace the original model file, or create a new model folder, such as model-cn, and change the model in main.py to the new folder path.  
 And you also need to modify settings in the main.py.
 
+2023.4.21更新
+发现谷歌翻译cn的端口没了。。。所以只能改为.com端口，可以在hosts文件加入
+142.251.112.90        translate.googleapis.com
+142.251.4.90        translate.googleapis.com
+142.251.120.90        translate.googleapis.com
+142.250.149.90        translate.googleapis.com
+142.250.148.90        translate.googleapis.com
+142.251.165.90        translate.googleapis.com
 
+引用：
+https://blog.csdn.net/qq_40902326/article/details/127545967
 
 
 
@@ -63,3 +73,5 @@ meng93914@gmail.com
 
 csdn文章地址： https://blog.csdn.net/Memory_and_Dream/article/details/123199398
 欢迎直接留言咨询
+
+

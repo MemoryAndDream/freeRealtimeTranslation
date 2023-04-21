@@ -20,7 +20,7 @@ import json
 start_time = time.time()  # 子进程这个starttime会重算
 from_lang = 'en'
 to_lang = 'zh-cn'
-google_trans_API = 'translate.googleapis.cn'  # can be translate.googleapis.com
+google_trans_API = 'translate.googleapis.com'  # can be translate.googleapis.com
 record_duration = 4 * 60  # record 4min for a single time
 
 ##
@@ -37,7 +37,7 @@ def record_wav(wav_path, senconds):
 
 
     # Device you want to record
-    sd.default.device[0] = 0  # set this index as your speaker device!!!  An input device(blakchole in mac, Stereo Mix on windows)
+    sd.default.device[0] = 1  # set this index as your speaker device!!!  An input device(blakchole in mac, Stereo Mix on windows)
     sd.default.samplerate = SAMPLE_RATE
 
     recording = sd.rec(int(SECONDS * SAMPLE_RATE), samplerate=SAMPLE_RATE, channels=MONO, dtype=np.int16)
@@ -49,6 +49,8 @@ def record_wav(wav_path, senconds):
 def translate(eng_text):
     from googletrans import Translator
     translator = Translator(service_urls=[google_trans_API])
+    a = translator.translate('我', src='zh-cn', dest='en')
+    print(a)
     text = translator.translate(eng_text, to_lang, from_lang).text
     return text
 
@@ -108,5 +110,8 @@ def print_devices():
     # Command to get all devices listed: py -m sounddevice
 
 if __name__ == '__main__':
-    print_devices()
-    main()
+    # print_devices()
+    # main()
+    a = translate('my name')
+    print(a)
+
