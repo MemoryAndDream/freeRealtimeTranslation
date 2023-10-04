@@ -21,7 +21,7 @@ start_time = time.time()  # 子进程这个starttime会重算
 from_lang = 'en'
 to_lang = 'zh-cn'
 google_trans_API = 'translate.googleapis.com'  # can be translate.googleapis.com
-record_duration = 4 * 60  # record 4min for a single time
+record_duration = 4 * 60  # record 4min for a single time, you can change it as you like
 
 ##
 SetLogLevel(-1)
